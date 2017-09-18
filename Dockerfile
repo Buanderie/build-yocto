@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get -y upgrade
 
 # Install the following utilities (required by poky)
-RUN apt-get install -y build-essential chrpath curl diffstat gcc-multilib gawk git-core libsdl1.2-dev texinfo unzip wget xterm
+RUN apt-get install -y build-essential chrpath curl diffstat gcc-multilib gawk git-core libsdl1.2-dev texinfo unzip wget xterm dos2unix
 
 # Additional host packages required by poky/scripts/wic
 RUN apt-get install -y bzip2 dosfstools mtools parted syslinux tree
